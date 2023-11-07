@@ -3,61 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RummyCircle Ad</title>
-    <style>
-        .ad-container {
-            width: 300px; /* Adjust the width as needed */
-            background-color: #f0f0f0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        .ad-image {
-            width: 100%;
-            height: auto;
-        }
-
-        .ad-description {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        .invite-link {
-            margin-top: 10px;
-            font-size: 14px;
-            color: #0078d4; /* Adjust the color as needed */
-            text-decoration: none;
-        }
-    </style>
+    <title>Stylish Calculator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="ad-container">
-        <img src="m-lp-slide-1.jpg" alt="RummyCircle Ad" class="ad-image">
-        <p class="ad-description">
-            RummyCircle - The Ultimate Online Rummy Experience! Play at your own risk and enjoy exciting rummy games.
-            RummyCircle is an online gaming platform that specializes in offering a wide variety of rummy card games to players. Rummy is a popular card game that requires skill, strategy, and a good understanding of the rules. RummyCircle provides a user-friendly and engaging platform for people to enjoy this classic card game in a digital format.
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: silver;
+    margin: 0;
+}
 
-Key features of RummyCircle include:
+.calculator {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    color: white;
+}
 
-1. Game Variations: RummyCircle offers multiple variations of the rummy card game, including Indian Rummy, Pool Rummy, Points Rummy, and Deals Rummy, providing players with different ways to enjoy the game.
+.display {
+    background-color: #444;
+    padding: 10px;
+}
 
-2. Tournaments: Players can participate in various tournaments with different entry fees and prize pools, adding a competitive element to the gameplay.
+#result {
+    width: 90%;
+    height: 40px;
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: 20px;
+}
 
-3. User-Friendly Interface: The platform is designed to be easy to navigate, making it accessible for both beginners and experienced rummy players.
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: #555;
+}
 
-4. Secure and Fair Play: RummyCircle ensures a fair and secure gaming environment, with stringent anti-fraud measures and random card shuffling algorithms.
+.btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #777;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
 
-5. Practice Games: Players can practice and improve their rummy skills by playing free practice games before participating in cash games or tournaments.
+.btn:hover {
+    background-color: #888;
+}
+/* Your existing CSS styles... */
+h1 {
+    font-size: 36px; /* Adjust the font size as desired */
+    color: #4a90e2; /* Choose a nice blue color for the heading text */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #333; /* Use a bright yellow background color */
+    border-radius: 10px; /* Add rounded corners for a colorful box effect */
+    display: inline-block; /* Make it an inline-block to center-align it properly */
+}
 
-6. Mobile App: RummyCircle offers a mobile app for convenient gaming on smartphones and tablets.
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 100px;
+    font-size: 25px;
+    max-width: 800px; /* Adjust the max-width to your preference */
+    margin: 0 auto; /* This centers the footer horizontally */
+}
 
-7. Rewards and Bonuses: The platform often provides bonuses and promotions, such as welcome bonuses, referral rewards, and loyalty programs.
+    </style>
+  <center><h1>Calculator Page</h1>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <button class="btn" onclick="clearResult()">C</button>
+            <button class="btn" onclick="appendToResult('7')">7</button>
+            <button class="btn" onclick="appendToResult('8')">8</button>
+            <button class="btn" onclick="appendToResult('9')">9</button>
+            <button class="btn" onclick="appendToResult('+')">+</button>
+            <button class="btn" onclick="appendToResult('4')">4</button>
+            <button class="btn" onclick="appendToResult('5')">5</button>
+            <button class="btn" onclick="appendToResult('6')">6</button>
+            <button class="btn" onclick="appendToResult('-')">-</button>
+            <button class="btn" onclick="appendToResult('1')">1</button>
+            <button class="btn" onclick="appendToResult('2')">2</button>
+            <button class="btn" onclick="appendToResult('3')">3</button>
+            <button class="btn" onclick="appendToResult('*')">*</button>
+            <button class="btn" onclick="appendToResult('0')">0</button>
+            <button class="btn" onclick="calculateResult()">=</button>
+            <button class="btn" onclick="appendToResult('/')">/</button>
+        </div><ul></ul>
+    </div><ul></ul>
+    <footer>
+    𝗪𝗘𝗕 𝗗𝗘𝗩𝗟𝗢𝗣𝗘𝗥 : Ved Bhogayta
+</footer>
 
-RummyCircle has become a popular destination for rummy enthusiasts to enjoy their favorite card game online, connect with other players, and potentially win cash prizes. It's important to note that online gaming platforms like RummyCircle may have age restrictions and responsible gaming guidelines in place to ensure a safe and enjoyable experience for all users.
-        </p>
-      <center>  <a href="YOUR_INVITE_LINK_HERE" class="invite-link">Join Now</a>
-    </div>
-</body>
-</html>
+
+    <script>
+        let result = document.getElementById('result');
+
+function appendToResult(value) {
+    if (result.value === '0') {
+        result.value = value;
+    } else {
+        result.value += value;
+    }
+}
+
+function clearResult() {
+    result.value = '0';
+}
+
+function calculateResult() {
+    try {
+        result.value = eval(result.value);
+    } catch (error) {
+        result.value = 'Please Valid Value Enter';
+    }
+}
+
+    </script>
+
