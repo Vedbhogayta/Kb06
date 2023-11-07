@@ -79,7 +79,7 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 100px;
+    padding: 92px;
     font-size: 25px;
     max-width: 800px; /* Adjust the max-width to your preference */
     margin: 0 auto; /* This centers the footer horizontally */
