@@ -70,7 +70,7 @@ h1 {
     font-size: 36px; /* Adjust the font size as desired */
     color: #4a90e2; /* Choose a nice blue color for the heading text */
     padding: 20px; /* Add some padding for spacing */
-    background-color: #333; /* Use a bright yellow background color */
+    /* Use a bright yellow background color */
     border-radius: 10px; /* Add rounded corners for a colorful box effect */
     display: inline-block; /* Make it an inline-block to center-align it properly */
 }
@@ -86,7 +86,7 @@ footer {
 }
 
     </style>
-  <center><h1>Calculator Page</h1>
+  <center><h1></h1>
     <div class="calculator">
         <div class="display">
             <input type="text" id="result" value="0" disabled>
@@ -134,7 +134,7 @@ function calculateResult() {
     try {
         result.value = eval(result.value);
     } catch (error) {
-        result.value = 'Please Valid Value Enter';
+        result.value = 'Please Enter A Vaild Value';
     }
 }
 
